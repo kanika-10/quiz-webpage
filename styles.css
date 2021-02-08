@@ -1,0 +1,66 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    :root{
+        --hue-neutral: 200;
+        --hue-wrong: 0;
+        --hue-correct: 145;
+    
+    }
+    body{
+        --hue: var(--hue-neutral);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(var(--hue),100%,20%);
+    }
+    body.correct{
+        --hue: var(--hue-correct);
+    }
+    body.wrong{
+        --hue: var(--hue-wrong);
+    }
+    .container{
+        width: 800px;
+        max-width:80%;;
+        background-color:white;
+        border-radius:5px;
+        padding: 10px;
+        box-shadow: black;
+    }
+    .btn-grid{
+        display:grid;
+        gap: 10px;
+        margin: 10px;
+    }
+    .btn{
+        --hue: var(--hue-neutral);
+        background-color: hsl(var(--hue),100%,50%);
+        border-radius: 10px;
+        padding:10px;
+    }
+    .btn:hover{
+        border-color: black;
+    }
+    .btn.correct{
+        --hue: var(--hue-correct);
+    }
+    .btn.wrong{
+        --hue: var(--hue-wrong);
+    }
+    .start-btn, .next-btn{
+        font-size:20px;
+        padding: 10px;
+        font-weight:bold;
+    }
+    .controls{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hide{
+        display:none;
+    }
