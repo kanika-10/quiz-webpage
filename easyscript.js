@@ -79,7 +79,7 @@ function clearStatusClass(element) {
 }
 const questions = [
     {
-        question: 'Who says this quote; "I have been in love. It is painful, pointless and overrated"?',
+        question: `Who says this quote; "I have been in love. It's painful, pointless and overrated"?`,
         answers: [
             { text: 'Damon' , correct: true },
             { text: 'Stefan' , correct: false},
