@@ -1,16 +1,15 @@
 
- 
   body{
       
       min-height: 100vh;
       display: flex;
       background: url("tvdlarge.jpg");
       background-repeat: no-repeat;
-      background-size: 1300px 600px;
+      background-size: 100% 100%;
 
   }
   #level {
-    position:fixed;
+    position:absolute;
      bottom:10px;
      right:30px;
     
@@ -65,6 +64,23 @@ ul li:nth-child(odd):hover {
 ul li:nth-child(even):hover {
     transform: perspective(200px) rotateY(-45deg);
     padding-right: 5%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* styles for wide screens */
+    body{
+    background: url("vertical1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+     #level {
+        position:absolute;
+        top: 220px;
+        left: 200px;
+
+        
+      }
 }
 
 
